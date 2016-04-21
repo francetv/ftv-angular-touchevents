@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="demoApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.2/angular.min.js"></script>
+    <script src="dist/component.js"></script>
+    <script src="demo/index.js"></script>
+    <style>
+      .active {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body ng-controller="DemoController">
+    <h1>Time bar</h1>
+    <p>Touch callback are triggered on touch device (tablet, mobile phone).<br>
+    Active class is applied on touch and click.<br>
+    Open console for more detail.</p>
+    <h3>Example:</h3>
+    <div ng-touch-start="touchStart()"
+         ng-touch-finish="touchFinish()"
+         ng-active-on-click="2000">
+      Touch me!
+    </div>
+    <br>
+    <div ng-touch-start="touchStart()"
+         ng-touch-finish="touchFinish()"
+         ng-active-on-click="pending"
+         ng-click="getGoogle()">
+      Click or touch me, I will stay active until google send me a response.
+    </div>
+    <p>Touch state: {{state}}</p>
+    <p>Response received: {{responseReceived}}</p>
+    <h2>Directive</h2>
+    <p>
+      <ul>
+        <li>ng-touch-start: trigger callback on touchstart event from browser</li>
+        <li>ng-touch-finish: trigger callback on touchend touchcancel event from browser</li>
+        <li>ng-active-on-click: how many time the "active" class will be visible (in ms). if "pending", it will wait until network has completed request.</li>
+      </ul>
+    </p>
+  </body>
+</html>
