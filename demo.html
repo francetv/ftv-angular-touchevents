@@ -20,8 +20,14 @@
     <h3>Example:</h3>
     <div ng-touch-start="touchStart()"
          ng-touch-finish="touchFinish()"
+         ng-active-on-click>
+      Click or touch me! I will always stay active
+    </div>
+    <br>
+    <div ng-touch-start="touchStart()"
+         ng-touch-finish="touchFinish()"
          ng-active-on-click="2000">
-      Touch me!
+      Click or touch me! I will active for 2 seconds
     </div>
     <br>
     <div ng-touch-start="touchStart()"
@@ -30,6 +36,7 @@
          ng-click="getGoogle()">
       Click or touch me, I will stay active until google send me a response.
     </div>
+    <h3>Status info:</h3>
     <p>Touch state: {{state}}</p>
     <p>Response received: {{responseReceived}}</p>
     <h2>Directive</h2>
