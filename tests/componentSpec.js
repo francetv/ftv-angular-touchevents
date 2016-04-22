@@ -1,7 +1,7 @@
 describe('FTV::ngTouchevents::Component', function () {
     var element, $scope, directiveScope, hasPendingRequests;
 
-    beforeEach(module('ftv.component.touchEvents', function($provide){
+    beforeEach(module('ftv.components.touchEvents', function($provide){
         $provide.value("httpRequestTracker", {
             hasPendingRequests: function () {
                 return hasPendingRequests;
