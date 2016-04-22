@@ -9,6 +9,7 @@ var jshint = require('gulp-jshint');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var compass = require('gulp-compass');
+var karma = require('karma').server;
 
 
 var buildDir = 'dist';
@@ -68,9 +69,8 @@ gulp.task('build-dev', function(callback) {
 });
 
 gulp.task('refresh-js-src', function(callback) {
-    sequence('build-js', callback);
+    sequence('js', callback);
 });
-
 
 gulp.task('build-dev-watch', function(callback) {
     sequence('build-dev', 'watch', callback);
@@ -96,3 +96,9 @@ gulp.task('js-lint', function() {
     .pipe(jshint.reporter('default'));
 });
 
+gulp.task('karma-test', function (callback) {
+    karma.start({
+        configFile: __dirname + '/karma.conf.js',
+        singleRun: true
+    }, callback);
+});

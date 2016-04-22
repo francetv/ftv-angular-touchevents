@@ -18,7 +18,7 @@ git clone git@gitlab.ftven.net:team-infini/ftv-angular-touchevents.git
 
 ```
 sudo apt-get install ruby ruby-dev gem
-npm install -g gulp
+npm install -g gulp bower
 
 npm install
 gem update --system
@@ -31,6 +31,12 @@ gulp build
 
 ```
 gulp build-dev-watch
+```
+
+## Tests
+
+```
+gulp karma-test
 ```
 
 ## Demo
