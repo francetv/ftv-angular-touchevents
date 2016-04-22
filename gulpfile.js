@@ -68,9 +68,8 @@ gulp.task('build-dev', function(callback) {
 });
 
 gulp.task('refresh-js-src', function(callback) {
-    sequence('build-js', callback);
+    sequence('js', callback);
 });
-
 
 gulp.task('build-dev-watch', function(callback) {
     sequence('build-dev', 'watch', callback);
