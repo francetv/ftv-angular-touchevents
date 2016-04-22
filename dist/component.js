@@ -4,7 +4,7 @@ angular.module('ftv.services.httpRequestTracker', []).service('httpRequestTracke
     };
 }]);
 
-angular.module("ftv.component.touchEvents", ['ftv.services.httpRequestTracker'])
+angular.module("ftv.components.touchEvents", ['ftv.services.httpRequestTracker'])
     .directive("ngTouchStart", function () {
         return {
             link: function ($scope, $element) {

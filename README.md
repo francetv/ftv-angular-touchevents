@@ -1,28 +1,51 @@
-FTVEN - toucheevents
-========================
+# Ftv::Components::TouchEvents
 
-Touch event directive
+Directive to handle touch events and add an active class to html element.
 
-# Get sources
+## Get sources
 
 ```
 git clone git@gitlab.ftven.net:team-infini/ftv-angular-touchevents.git
 ```
 
-# Required dependencies
+## Required dependencies
 
 - [npm](https://nodejs.org/)
 - [gem](https://rubygems.org/)
 
-# Installation process
+## How to use
+
+Include javascript
+
+```
+<script src="dist/component.js"></script>
+```
+
+Add module into your app
+
+```
+angular.module('daddemoApp', ['ftv.components.touchEvents']);
+```
+
+Use it in template via attributes
+
+```
+<div ng-touch-start="touchStart()" ng-touch-finish="touchFinish()" ng-active-on-click="2000"></div>
+```
+
+* ng-touch-start: trigger callback on touchstart event from browser
+* ng-touch-finish: trigger callback on touchend touchcancel event from browser
+* ng-active-on-click: how many time the "active" class will be visible (in ms). if "pending", it will wait until network has completed request
+
+## Build process
 
 ```
 sudo apt-get install ruby ruby-dev gem
 npm install -g gulp bower
 
 npm install
-gem update --system
-gem install compass
+bower install
+sudo gem install compass
 
 gulp build
 ```
