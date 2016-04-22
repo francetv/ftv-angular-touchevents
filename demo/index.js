@@ -1,4 +1,4 @@
-angular.module('demoApp', ['ftv.component.touchEvents']);
+angular.module('demoApp', ['ftv.components.touchEvents']);
 angular.module('demoApp').controller('DemoController', ['$scope', '$http', function($scope, $http) {
     $scope.responseReceived = false;
     $scope.state = "nothing";
