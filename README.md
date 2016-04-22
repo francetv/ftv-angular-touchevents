@@ -45,7 +45,7 @@ npm install -g gulp bower
 
 npm install
 bower install
-gem install compass
+sudo gem install compass
 
 gulp build
 ```
