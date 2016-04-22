@@ -44,7 +44,7 @@ sudo apt-get install ruby ruby-dev gem
 npm install -g gulp bower
 
 npm install
-gem update --system
+bower install
 gem install compass
 
 gulp build
