@@ -1,11 +1,13 @@
 # Ftv::Components::TouchEvents
 
+This project is part of [francetv zoom open source projects](https://github.com/francetv/zoom-public) (iOS, Android and Angular).
+
 Directive to handle touch events and add an active class to html element.
 
 ## Get sources
 
 ```
-git clone git@gitlab.ftven.net:team-infini/ftv-angular-touchevents.git
+git clone git@github.com:francetv/ftv-angular-touchevents.git
 ```
 
 ## Required dependencies
@@ -71,6 +73,3 @@ http-server
 ```
 
 Open [demo](http://127.0.0.1:8080/demo.html)
-
----------------------------------------
-This project is part of [francetv zoom open source projects](https://gitlab.ftven.net/team-infini/zoom-public) (iOS, Android and Angular)
