@@ -1,7 +1,7 @@
 {
-  "name": "ftv-angular-timebar",
+  "name": "ftv-angular-touchevents",
   "version": "1.0.0",
-  "description": "France TV - Infini - Timebar",
+  "description": "France TV - Infini - Touchevents",
   "license": "proprietary",
   "dependencies": {
   },
@@ -33,6 +33,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:francetv/ftv-angular-timebar.git"
+    "url": "git@github.com:francetv/ftv-angular-touchevents.git"
   }
 }
