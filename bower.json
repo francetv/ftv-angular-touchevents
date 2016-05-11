@@ -12,7 +12,9 @@
     "node_modules",
     ".gitignore",
     ".jshintrc",
-    "component.js"
+    "component.js",
+    "karma.conf.js",
+    "gulpfile.js"
   ],
   "dependencies": {
     "jquery": "2.2.0",
